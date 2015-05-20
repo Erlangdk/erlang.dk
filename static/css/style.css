@@ -1,0 +1,127 @@
+body {
+	width:100%;
+	margin:0px;
+	font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    background-color: white;
+    line-height:20px;
+}
+
+a {
+    color:#A0A0A0 ;
+    text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline; 
+}
+
+#wrapper {
+    height:100%;
+}
+
+.logoText {
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.address-right {
+    float: right;
+    overflow: hidden;
+}
+
+.header_container {
+    width:100%;
+    min-width:1000px;
+    height:94px;
+    margin:0px;
+    padding:0px;
+    background-color: #449d44;
+    overflow:hidden;
+}
+
+.header_content {
+    margin:0 auto;
+    width:1000px;
+}
+
+.company_logo {
+    float: left;
+    position:relative;
+    top:20.5px;
+    left:403.5px;
+}
+
+.page_content {
+    margin:0 auto;
+    width:1000px;
+}
+
+/* CSS to navigation starts here */
+
+.customNav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 40px;
+    background-color: #428bca;
+    border-radius: 4px;
+}
+
+.customNav select {
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    color: black;
+    border: none;
+}
+
+.customNav a {
+    float: left;
+    display: block;
+    padding: 0px 10px 0px 10px;
+    line-height: 40px;
+    color: white;
+}
+
+.customNav a:first-child {
+    padding-left: 20px;
+}
+
+/* CSS for navigation ends here */
+
+/*For footer*/
+
+.customFeaturetteDivider {
+    margin: 80px 0px 40px 0px;
+}
+
+/*footer ends here*/
+
+.front_pic {
+    margin:0px 0px 60px 0px;
+    height:375px;
+    border-radius:4px;
+    overflow:hidden;
+}
+
+#jsAnnexe {
+    display: none;
+}
+
+#jsGarden {
+    display: none;
+}
+
+#langSelect {
+    float:right;
+}
+
+#checklist {
+    margin: 0 auto;
+}
+
+#checklist h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}

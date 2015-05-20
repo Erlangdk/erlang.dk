@@ -1,0 +1,549 @@
+<!doctype>
+<html>
+<head>
+<title>
+Mieten Sie ein gemütliches Ferienhaus mit einem großen und schönen Garten und herrlichem Blick
+
+</title>
+<meta name="description" content="
+Erlang Ferienhaus ist ein gemütliches Ferienhaus mit einem Nebengebäude und einer großen und schönen Garten. Perfekt für einen erholsamen Urlaub.
+
+">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/static/magnific-popup/dist/magnific-popup.css">
+<script src="/static/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="/static/jquery.cookie.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-26820992-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+function baseName(str) {
+var base = new String(str).substring(str.lastIndexOf('/') + 1);
+return base;
+}
+$(function(){
+$('#langSelect').change(function(){
+location.href = '/'+$(this).val()+'/'+baseName(location.pathname);
+$.cookie('lang', $(this).val(), { expires: 364, path: '/' });
+});
+});
+var langs = [
+
+"de",
+
+"en",
+
+"da",
+
+];
+var lang_normalize = {
+
+"de": "de",
+
+"de-de": "de",
+
+"en-za": "en",
+
+"en": "en",
+
+"de-lu": "de",
+
+"en-tt": "en",
+
+"en-bz": "en",
+
+"en-gb": "en",
+
+"de-li": "de",
+
+"en-jm": "en",
+
+"de-at": "de",
+
+"en-us": "en",
+
+"en-au": "en",
+
+"de-ch": "de",
+
+"en-ph": "en",
+
+"en-ca": "en",
+
+"en-nz": "en",
+
+"en-ie": "en",
+
+"da": "da",
+
+};
+function langNorm(lang) {
+if (lang in lang_normalize) {
+return lang_normalize[lang];
+} else {
+return 'en';
+}
+}
+var str = location.pathname;
+var start = str.indexOf('/') + 1;
+var end = str.indexOf('/', start);
+var lang = str.substring(start, end);
+if (lang == '/') {
+lang = $.cookie('lang') || window.navigator.userLanguage || window.navigator.language;
+lang = langNorm(lang);
+if (langs.indexOf(lang) > -1) {
+location.href = '/'+lang+'/'+baseName(location.pathname);
+} else {
+location.href = '/en/'+baseName(location.pathname);
+}
+} else {
+$(function(){
+lang = langNorm(lang);
+$("#langSelect option").filter(function() {
+return $(this).val() == lang;
+}).prop('selected', true);
+});
+}
+</script>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+$('.showImage').magnificPopup({
+delegate: 'a',
+type: 'image',
+tLoading: 'Loading image #%curr%...',
+mainClass: 'mfp-img-mobile',
+gallery: {
+enabled: true,
+navigateByImgClick: true,
+preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+},
+image: {
+tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+titleSrc: function(item) {
+return item.el.attr('title') + '<small>By Erlang</small>';
+}
+}
+});
+});
+</script>
+<div class="wrapper">
+<div class="page_content">
+<div class="logoText">Erlang Ferienhaus
+</div>
+<div class="customNav">
+<a href="/de/index.html">Home
+</a>
+<a href="/de/house.html">Haus und Garten
+</a>
+<a href="/de/surroundings.html">Baden/Fisherei/Marina
+</a>
+<a href="/de/calendar.html">Verfügb./Preise
+</a>
+<a href="/de/orderfood.html">Service
+</a>
+<a href="/de/booking_contact.html">Buchung/Kontakt
+</a>
+<a href="/de/reviews.html">Empfehlungen
+</a>
+<a href="/de/address.html">Adresse
+</a>
+<select id="langSelect" class="navRight">
+
+<option value="de">Deutsch</option>
+
+<option value="en">English</option>
+
+<option value="da">Dansk</option>
+
+</select>
+</div>
+
+<h1 class="text-center">Das Ferienhaus
+</h1>
+<p class="text-center">Klicken Sie auf einen der folgenden Tasten
+</p>
+<div class="btn-group btn-group-justified">
+<div class="btn-group">
+<button type="button" class="active btn btn-default" id="btn-MainHouse">Das Ferienhaus
+</button>
+</div>
+<div class="btn-group">
+<button type="button" class="btn btn-default" id="btn-Annexe">Ein Nebengebäude
+</button>
+</div>
+<div class="btn-group">
+<button type="button" class="btn btn-default" id="btn-Garden">Der Garten
+</button>
+</div>
+</div>
+<div id="jsMainHouse">
+<h2 class="text-center">Das Ferienhaus
+</h2>
+<div class="marketing" style="margin-top: 60px;">
+<div class="row featurette">
+<div class="col-md-7">
+<h3 class="featurette-heading">Ein gemütliches Kalmarhaus
+</h3>
+<p class="lead">Das Haus ist hoch gelegen und es ist 61 m&sup2; + 8 m&sup2; in einem Nebengebäude. Also insgesamt 69 m&sup2;. <br /><br /> Es gibt eine HauptTerrasse; Eine für Morgen, eine weitere - für zwei Personen - und schließlich die Terrasse am Ende des Gehäuses nach Westen - für die Abendsonne. Es gibt ein helles Badezimmer mit Dusche und weiße Sanitär. <br />Wir haben ein Schlafzimmer mit 2 Betten + 2 Zimmer, jeweils mit einen Etagenbett und einem Nebengebäude mit 2 Betten. So insgesamt 8 Betten.
+
+</p>
+</div>
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/house5.jpg" alt="Generic placeholder image">
+</div>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/house0.jpg" alt="Generic placeholder image">
+</div>
+<div class="col-md-7">
+<h3 class="featurette-heading">Verteilung Halle und eine funktionale Küche
+</h3>
+<p class="lead">Das Haus hat eine schöne Kombination mit Ess-und Wohnzimmer, mit Kamin und Ausgang zu der Terrasse nach Westen. Es gibt eine Verteilung Halle und eine funktionale Küche
+
+</p>
+</div>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-7">
+<h3 class="featurette-heading">Das Wohnzimmer
+</h3>
+<p class="lead">Das Wohnzimmer ist schön und gemütlich. Sie finden einen Kamin und Ausgang zu der Terrasse nach Westen und zum Nedengebäude nach Osten. Es gibt auch einen 37 "Samsung TV im Wohnzimmer. Es gibt Bettdecken und Kopfkissen (Bettwäsche bringen Sie selbst mit, bitte), Grill, TV (Samsung 37 "-Flachbildschirm), CD-Player, Kühlschrank und Tiefkühltruhe. Ins Küche finden Sie eine normale Küchenausstattung. Es gibt 3G-Signal für Mobiltelefon.
+
+</p>
+</div>
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/house2.jpg" alt="Generic placeholder image">
+</div>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/house3.jpg" alt="Generic placeholder image">
+</div>
+<div class="col-md-7">
+<h3 class="featurette-heading">Betten
+</h3>
+<p class="lead">Es gibt ein Schlafzimmer und 2 Schlafzimmer mit 2 Etagenbetten. Im Nebengebäude finden Sie 2 Betten. Insgesamt 8 Betten. 
+
+</p>
+</div>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-7">
+<h3 class="featurette-heading">Ein Badezimmer
+</h3>
+<p class="lead">Es gibt ein Badezimmer mit Dusche.
+
+</p>
+</div>
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/house1.jpg" alt="Generic placeholder image">
+</div>
+</div>
+</div>
+<hr class="featurette-divider">
+<h3>Fotos vom Ferienhaus
+</h3>
+<div class="row showImage">
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house0.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house0.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house1.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house1.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house2.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house2.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house3.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house3.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house4.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house4.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house5.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house5.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house6.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house6.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house7.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house7.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house8.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house8.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house9.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house9.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/house10.jpg" title="The main house" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/house10.jpg">
+</a>
+</div>
+
+</div>
+</div>
+<div id="jsAnnexe">
+<h2 class="text-center">Das Nebengebäude
+</h2>
+<div class="marketing" style="margin-top: 60px;">
+<div class="row featurette">
+<div class="col-md-7">
+<h3 class="featurette-heading">Ein gemütliches Nebengebäude
+</h3>
+<p class="lead">Das Nebengebäude ist 8 m&sup2;.
+
+</p>
+</div>
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/annexe0.png" alt="Generic placeholder image">
+</div>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/annexe1.jpg" alt="Generic placeholder image">
+</div>
+<div class="col-md-7">
+<h3 class="featurette-heading">Platz für zwei
+</h3>
+<p class="lead">Es gibt im Nebengebäude zwei Betten, und es gibt eine Tiefkühltruhe.
+
+</p>
+</div>
+</div>
+</div>
+<hr class="featurette-divider">
+<h3>Fotos vom Nebengebäude
+</h3>
+<div class="row showImage">
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/annexe0.jpg" title="The annexe" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/annexe0.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/annexe1.jpg" title="The annexe" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/annexe1.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/annexe2.jpg" title="The annexe" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/annexe2.jpg">
+</a>
+</div>
+
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/house/annexe3.jpg" title="The annexe" class="thumbnail">
+<img src="/static/pictures/thumbnails/house/annexe3.jpg">
+</a>
+</div>
+
+</div>
+</div>
+<div id="jsGarden">
+<h2>Der Garten
+</h2>
+<p>Der Garten ist (2.682 m&sup2;) und schön mit toller Aussicht.
+</p>
+<p>Auf den folgenden Bildern können Sie den Garten und die Aussicht aus dem Garten sehen.
+</p>
+<h3>Fotos vom Garten
+</h3>
+<div class="row showImage">
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden0.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden0.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden1.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden1.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden2.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden2.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden3.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden3.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden4.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden4.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden5.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden5.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden7.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden7.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden8.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden8.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden9.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden9.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden10.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden10.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden11.jpg" title="The Garden" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden11.jpg">
+</a>
+</div>
+</div>
+<h3>Aussicht aus dem Garten
+</h3>
+<div class="row showImage">
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden6.jpg" title="View of a field" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden6.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden12.jpg" title="View of a field and the popular hill" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden12.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden13.jpg" title="View of the ocean" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden13.jpg">
+</a>
+</div>
+<div class="col-xs-6 col-md-3">
+<a href="/static/pictures/garden/garden14.jpg" title="View of the popular hill" class="thumbnail">
+<img src="/static/pictures/thumbnails/garden/garden14.jpg">
+</a>
+</div>
+</div>
+</div>
+<hr class="customFeaturetteDivider">
+
+<p class="pull-left">Designt von:
+ <a href="mailto:jonathan@erlang.dk">Jonathan Erlang Sloth</a></p>
+<p class="pull-right">
+<a href="Zurück zum Anfang der Seite
+"></a>
+</p>
+<br>
+<br>
+
+
+ <p>Zu vermieten <a href="http://www.ferienwohnungen-ferienhaeuser-weltweit.de/auswobj_d.aspx?Land=DK">Ferienhäuser und Ferienwohnungen Dänemark</a> provisionsfrei vom Privatvermieter. Ferienhaus kostenlos eintragen.</p>
+<a href="http://www.ferienhausmarkt.com/country/danemark/">Ferienhaus Dänemark</a>
+<a href="http://www.ostsee-strandurlaub.net/">Ferienwohnung Ostsee</a>
+<a href="http://www.1000ferienwohnungen.de/daenemark-ferienwohnungen-ferienhaeuser.html" target="_blank" title="Ferienhaus Dänemark">Ferienhaus Dänemark</a>
+<a href="http://www.ferienunterkunft-direkt.de/" title="Ferienhäuser und Ferienwohnungen weltweit">Ferienhäuser und Ferienwohnungen</a>
+<a href="http://www.fewo-experte.com/" target="_blank" title="Fewo-Experte.com - Ferienwohnungen und Ferienhäuser kostenlos inserieren">Fewo-Experte.com</a>
+<a href="http://www.ferienundwohnen.de/" title="Ferienhäuser und Ferienwohnungen weltweit">Ferienhäuser und Ferienwohnungen</a>
+<a href="http://www.ferienhausmarkt.com/subregion/ostsee-2/">Ferienhaus Ostsee</a>
+<a href="http://www.ferienhausmarkt.com/subregion/nordsee-ostfriesland/">Ferienhaus Nordsee</a>
+<a href="http://www.ferienhausmiete.de/ferienhaus_details.php?obj_nr=43606">Ferienhaus - Erlang Sloth in Skødshoved, Mols</a>
+<a href="http://www.fewo-von-privat.de/" title="Ferienwohnung">Ferienwohnung</a>
+<a href="http://www.ferien-miete.de/Ferienhaus-Knebel-Daenemark-d39368.html" title="Ferienhaus Knebel Arhus Dänemark">Ferienhaus Knebel</a>
+
+
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#btn-MainHouse").click(function(){
+$("#jsMainHouse").show();
+$("#jsAnnexe").hide();
+$("#jsGarden").hide();
+$("#btn-MainHouse").removeClass("active");
+$("#btn-MainHouse").addClass("active btn btn-default");
+$("#btn-Annexe").removeClass("active");
+$("#btn-Garden").removeClass("active");
+});
+$("#btn-Annexe").click(function(){
+$("#jsMainHouse").hide();
+$("#jsAnnexe").show();
+$("#jsGarden").hide();
+$("#btn-MainHouse").removeClass("active");
+$("#btn-Annexe").removeClass("active");
+$("#btn-Annexe").addClass("active btn btn-default");
+$("#btn-Garden").removeClass("active");
+});
+$("#btn-Garden").click(function(){
+$("#jsMainHouse").hide();
+$("#jsAnnexe").hide();
+$("#jsGarden").show();
+$("#btn-MainHouse").removeClass("active");
+$("#btn-Annexe").removeClass("active");
+$("#btn-Garden").removeClass("active");
+$("#btn-Garden").addClass("active btn-default");
+});
+});
+</script>
+</body>
+</html>

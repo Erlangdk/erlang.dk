@@ -1,0 +1,437 @@
+<!doctype>
+<html>
+<head>
+<title>Günstige Ferienwohnung - Mieten Sie ein Ferienhaus in Mols, Dänemark
+</title>
+<meta name="description" content="Privates Ferienhaus zu günstigen Preisen. Verbringen Sie Ihren Urlaub in einem gemütlichen Ferienhaus mit einem großen und schönen Grundstück. Die Umgebung ist Reich, und es ist nur ungefähr 500 Meter vom Strand entfernt.
+">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/static/magnific-popup/dist/magnific-popup.css">
+<script src="/static/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="/static/jquery.cookie.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-26820992-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+function baseName(str) {
+var base = new String(str).substring(str.lastIndexOf('/') + 1);
+return base;
+}
+$(function(){
+$('#langSelect').change(function(){
+location.href = '/'+$(this).val()+'/'+baseName(location.pathname);
+$.cookie('lang', $(this).val(), { expires: 364, path: '/' });
+});
+});
+var langs = [
+
+"de",
+
+"en",
+
+"da",
+
+];
+var lang_normalize = {
+
+"de": "de",
+
+"de-de": "de",
+
+"en-za": "en",
+
+"en": "en",
+
+"de-lu": "de",
+
+"en-tt": "en",
+
+"en-bz": "en",
+
+"en-gb": "en",
+
+"de-li": "de",
+
+"en-jm": "en",
+
+"de-at": "de",
+
+"en-us": "en",
+
+"en-au": "en",
+
+"de-ch": "de",
+
+"en-ph": "en",
+
+"en-ca": "en",
+
+"en-nz": "en",
+
+"en-ie": "en",
+
+"da": "da",
+
+};
+function langNorm(lang) {
+if (lang in lang_normalize) {
+return lang_normalize[lang];
+} else {
+return 'en';
+}
+}
+var str = location.pathname;
+var start = str.indexOf('/') + 1;
+var end = str.indexOf('/', start);
+var lang = str.substring(start, end);
+if (lang == '/') {
+lang = $.cookie('lang') || window.navigator.userLanguage || window.navigator.language;
+lang = langNorm(lang);
+if (langs.indexOf(lang) > -1) {
+location.href = '/'+lang+'/'+baseName(location.pathname);
+} else {
+location.href = '/en/'+baseName(location.pathname);
+}
+} else {
+$(function(){
+lang = langNorm(lang);
+$("#langSelect option").filter(function() {
+return $(this).val() == lang;
+}).prop('selected', true);
+});
+}
+</script>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+$('.showImage').magnificPopup({
+delegate: 'a',
+type: 'image',
+tLoading: 'Loading image #%curr%...',
+mainClass: 'mfp-img-mobile',
+gallery: {
+enabled: true,
+navigateByImgClick: true,
+preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+},
+image: {
+tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+titleSrc: function(item) {
+return item.el.attr('title') + '<small>By Erlang</small>';
+}
+}
+});
+});
+</script>
+<div class="wrapper">
+<div class="page_content">
+<div class="logoText">Erlang Ferienhaus
+</div>
+<div class="customNav">
+<a href="/de/index.html">Home
+</a>
+<a href="/de/house.html">Haus und Garten
+</a>
+<a href="/de/surroundings.html">Baden/Fisherei/Marina
+</a>
+<a href="/de/calendar.html">Verfügb./Preise
+</a>
+<a href="/de/orderfood.html">Service
+</a>
+<a href="/de/booking_contact.html">Buchung/Kontakt
+</a>
+<a href="/de/reviews.html">Empfehlungen
+</a>
+<a href="/de/address.html">Adresse
+</a>
+<select id="langSelect" class="navRight">
+
+<option value="de">Deutsch</option>
+
+<option value="en">English</option>
+
+<option value="da">Dansk</option>
+
+</select>
+</div>
+
+<div class="front_pic">
+<img src="/static/pictures/front/home3.jpg?v=1" title="Erlang Holiday Cottage" alt="Erlang Holiday Cottage" />
+</div>
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="marketing">
+<div class="row">
+<div class="col-lg-4">
+<img class="img-circle" src="/static/pictures/thumbnails/house/house0.jpg" alt="Erlang Sloth Summer Cottage" style="width: 140px; height: 140px;">
+<h2>Gemütliches Ferienhaus
+</h2>
+<p>Mieten Sie ein gemütliches Ferienhaus mit 8 Betten. Der Garten ist groß und schön, und die Umgebung ist erstaunlich.
+</p>
+<p><a class="btn btn-default" href="#thumbHolidayHome" role="button">Mehr zu lesen
+</a></p>
+</div><!-- /.col-lg-4 -->
+<div class="col-lg-4">
+<img class="img-circle" src="/static/pictures/thumbnails/price.jpg" alt="Erlang Sloth Summer Cottage" style="width: 140px; height: 140px;">
+<h2>Günstige Preise
+</h2>
+<p>Das Ferienhaus wird privat gemietet - also ohne Zwischenhändler - und deshalb ist der Preis niedrig. Preis beginnt ab 255 €
+</p>
+<p><a class="btn btn-default" href="/de/calendar.html" role="button">Mehr zu lesen
+</a></p>
+</div><!-- /.col-lg-4 -->
+<div class="col-lg-4">
+<img class="img-circle" src="/static/pictures/thumbnails/food1.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+<h2>Mögliche Leistungen
+</h2>
+<p>Wäre es schön mit hausgemachte Speisen für Sie am ersten Tag? Und Sie können für die Endreinigung zahlen, so dass Sie nicht darüber nachzudenken brauchen
+</p>
+<p><a class="btn btn-default" href="/de/orderfood.html" role="button">Mehr zu lesen
+</a></p>
+</div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+<!-- Start the featurettes -->
+<hr id="thumbHolidayHome" class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/house4.jpg" alt="Generic placeholder image">
+</div>
+<div class="col-md-7">
+<h2 class="featurette-heading">Das Ferienhaus
+</h2>
+<p class="lead">Ein gemütliches Ferienhaus mit einem Nebengebäude. Das Ferienhaus verfügt über drei Schlafzimmer mit jeweils zwei Betten (Die vier von den Betten bestehen aus zwei Etagenbetten), ein Badezimmer und einen kombinierten Ess-und Wohnzimmer mit Kamin (+ Elektroheizung ). In einem Nebengebäude gibt es noch 2 Betten.
+
+</p>
+<a href="/de/house.html"><button type="button" class="btn btn-default btn-default-custom">Mehr zu lesen
+</button></a>
+</div>
+</div>
+</table>
+<hr class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-7">
+<h2 class="featurette-heading">Der schöne Garten
+</h2>
+<p class="lead">Ein schöner Garten von 2613 m&sup2, die kindergerecht ist. Im Garten, unter anderem vier Terrassen.
+
+</p>
+<a href="/de/house.html"><button type="button" class="btn btn-default btn-default-custom">Mehr zu lesen
+</button></a>
+</div>
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/garden0.jpg" alt="Holiday Home - Big, Beautiful Garden" title="Holiday Home - Big, Beautiful Garden" />
+</div>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/surroundings0.jpg" alt="Holiday Home - Beautiful Surroundings" title="Holiday Home - Beautiful Surroundings" />
+</div>
+<div class="col-md-7">
+<h2 class="featurette-heading">Schöne Umgebung
+</h2>
+<p class="lead">Das Ferienhaus liegt in den Hügeln von Mols, was bedeutet, dass die Umgebung wunderschön sind. Es gibt einen Fussweg zu einem kleinen Yachthafen und kindergerechten Strand, ungefähr 500 Meter. Der Pfad führt direkt am Wasser, grüne Zäune entlang.
+
+</p>
+<a href="/de/surroundings.html"><button type="button" class="btn btn-default btn-default-custom">Mehr zu lesen
+</button></a>
+</div>
+</div>
+<hr class="featurette-divider">
+<div id="checklist">
+<h2 class=" featurette-heading text-center">Information
+</h2>
+<table style="margin: 0 auto;">
+<tr>
+<td>
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+8 Betten
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+Kissen und Bettdecken
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+4 Terrassen
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+Grill
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+Hunde und Katzen erlaubt
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+Kamin
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+Kühlschrank, Gefriertruhe und elektroherd
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+Normale Küchengeräte
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+37" Samsung Flachbildschirm
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+5 Dänischen TV-Sender
+
+</td>
+</tr>
+<tr>
+<td width="30px">
+<span class="glyphicon glyphicon-ok"></span>
+</td>
+<td>
+3G-Signal für Mobiltelefon
+</td>
+</tr>
+</table>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-7">
+<h2 class="featurette-heading">Buchen Sie Ihren Urlaub jetzt
+</h2>
+<p class="lead">Möchten Sie Ihren Urlaub oder einige von Ihren Urlaub in Erlang Hause verbringen? Wenn ja, überprüfen Sie, ob das Haus frei ist. Das Ferienhaus wird privat gemietet - also ohne Zwischenhändler - und deshalb ist der Preis niedrig. Preis beginnt ab 255 €.
+
+</p>
+<a href="/de/calendar.html"><button type="button" class="btn btn-default btn-default-custom">Mehr zu lesen
+</button></a>
+</div>
+<div class="col-md-5">
+<img class="featurette-image img-responsive" src="/static/pictures/featurette/calendar0.jpg" alt="Generic placeholder image">
+</div>
+</div>
+<hr class="customFeaturetteDivider">
+</div><!-- marketing ends here -->
+
+<p class="pull-left">Designt von:
+ <a href="mailto:jonathan@erlang.dk">Jonathan Erlang Sloth</a></p>
+<p class="pull-right">
+<a href="Zurück zum Anfang der Seite
+"></a>
+</p>
+<br>
+<br>
+
+
+ <p>Zu vermieten <a href="http://www.ferienwohnungen-ferienhaeuser-weltweit.de/auswobj_d.aspx?Land=DK">Ferienhäuser und Ferienwohnungen Dänemark</a> provisionsfrei vom Privatvermieter. Ferienhaus kostenlos eintragen.</p>
+<a href="http://www.ferienhausmarkt.com/country/danemark/">Ferienhaus Dänemark</a>
+<a href="http://www.ostsee-strandurlaub.net/">Ferienwohnung Ostsee</a>
+<a href="http://www.1000ferienwohnungen.de/daenemark-ferienwohnungen-ferienhaeuser.html" target="_blank" title="Ferienhaus Dänemark">Ferienhaus Dänemark</a>
+<a href="http://www.ferienunterkunft-direkt.de/" title="Ferienhäuser und Ferienwohnungen weltweit">Ferienhäuser und Ferienwohnungen</a>
+<a href="http://www.fewo-experte.com/" target="_blank" title="Fewo-Experte.com - Ferienwohnungen und Ferienhäuser kostenlos inserieren">Fewo-Experte.com</a>
+<a href="http://www.ferienundwohnen.de/" title="Ferienhäuser und Ferienwohnungen weltweit">Ferienhäuser und Ferienwohnungen</a>
+<a href="http://www.ferienhausmarkt.com/subregion/ostsee-2/">Ferienhaus Ostsee</a>
+<a href="http://www.ferienhausmarkt.com/subregion/nordsee-ostfriesland/">Ferienhaus Nordsee</a>
+<a href="http://www.ferienhausmiete.de/ferienhaus_details.php?obj_nr=43606">Ferienhaus - Erlang Sloth in Skødshoved, Mols</a>
+<a href="http://www.fewo-von-privat.de/" title="Ferienwohnung">Ferienwohnung</a>
+<a href="http://www.ferien-miete.de/Ferienhaus-Knebel-Daenemark-d39368.html" title="Ferienhaus Knebel Arhus Dänemark">Ferienhaus Knebel</a>
+
+
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#btn-MainHouse").click(function(){
+$("#jsMainHouse").show();
+$("#jsAnnexe").hide();
+$("#jsGarden").hide();
+$("#btn-MainHouse").removeClass("active");
+$("#btn-MainHouse").addClass("active btn btn-default");
+$("#btn-Annexe").removeClass("active");
+$("#btn-Garden").removeClass("active");
+});
+$("#btn-Annexe").click(function(){
+$("#jsMainHouse").hide();
+$("#jsAnnexe").show();
+$("#jsGarden").hide();
+$("#btn-MainHouse").removeClass("active");
+$("#btn-Annexe").removeClass("active");
+$("#btn-Annexe").addClass("active btn btn-default");
+$("#btn-Garden").removeClass("active");
+});
+$("#btn-Garden").click(function(){
+$("#jsMainHouse").hide();
+$("#jsAnnexe").hide();
+$("#jsGarden").show();
+$("#btn-MainHouse").removeClass("active");
+$("#btn-Annexe").removeClass("active");
+$("#btn-Garden").removeClass("active");
+$("#btn-Garden").addClass("active btn-default");
+});
+});
+</script>
+</body>
+</html>
