@@ -53,9 +53,18 @@ a:hover {
     left:403.5px;
 }
 
-.page_content {
+/*.page_content {
     margin:0 auto;
     width:1000px;
+}*/
+
+/*.page_content {
+    margin: 0 auto;
+    max-width: 1000px;
+}*/
+
+.container {
+    max-width: 1174px;    
 }
 
 /* CSS to navigation starts here */
@@ -88,6 +97,15 @@ a:hover {
     padding-left: 20px;
 }
 
+.navbar-default {
+  background-color: #428bca;
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
 /* CSS for navigation ends here */
 
 /*For footer*/
@@ -100,9 +118,8 @@ a:hover {
 
 .front_pic {
     margin:0px 0px 60px 0px;
-    height:375px;
     border-radius:4px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 #jsAnnexe {
@@ -111,10 +128,6 @@ a:hover {
 
 #jsGarden {
     display: none;
-}
-
-#langSelect {
-    float:right;
 }
 
 #checklist {

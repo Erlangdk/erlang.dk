@@ -6,15 +6,15 @@
 <meta name="description" content="Privat sommerhusudlejning til lave priser.  Hold ferie i et hyggeligt sommerhus med en stor og flot grund.  Sommerhusets omgivelser er naturrige, og der er kun ca. 500 meter til den nærmeste badestrand.
 ">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="/static/magnific-popup/dist/magnific-popup.css">
 <script src="/static/magnific-popup/dist/jquery.magnific-popup.js"></script>
 <script src="/static/jquery.cookie.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -39,52 +39,52 @@ $.cookie('lang', $(this).val(), { expires: 364, path: '/' });
 });
 var langs = [
 
+"da",
+
 "de",
 
 "en",
 
-"da",
-
 ];
 var lang_normalize = {
 
-"de": "de",
-
-"de-de": "de",
-
-"en-za": "en",
-
-"en": "en",
-
-"de-lu": "de",
-
-"en-tt": "en",
-
-"en-bz": "en",
-
-"en-gb": "en",
-
 "de-li": "de",
-
-"en-jm": "en",
-
-"de-at": "de",
-
-"en-us": "en",
-
-"en-au": "en",
-
-"de-ch": "de",
-
-"en-ph": "en",
-
-"en-ca": "en",
-
-"en-nz": "en",
 
 "en-ie": "en",
 
+"en-au": "en",
+
+"en-bz": "en",
+
+"de-lu": "de",
+
+"en-za": "en",
+
 "da": "da",
+
+"en-us": "en",
+
+"en-jm": "en",
+
+"en-ca": "en",
+
+"en-ph": "en",
+
+"en-gb": "en",
+
+"en-tt": "en",
+
+"de": "de",
+
+"de-ch": "de",
+
+"en-nz": "en",
+
+"de-de": "de",
+
+"en": "en",
+
+"de-at": "de",
 
 };
 function langNorm(lang) {
@@ -138,40 +138,55 @@ return item.el.attr('title') + '<small>By Erlang</small>';
 });
 });
 </script>
-<div class="wrapper">
-<div class="page_content">
-<div class="logoText">Erlang Sommerhus
+<div>
+<div class="container">
+<div class="logoText"><a href="/da/index.html">Erlang Sommerhus
+</a></div>
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#e-navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span style="color:white;">Menu
+</span>
+</button>
 </div>
-<div class="customNav">
-<a href="/da/index.html">Forside
-</a>
-<a href="/da/house.html">Huset og Haven
-</a>
-<a href="/da/surroundings.html">Badning/Fiskeri/Marina
-</a>
-<a href="/da/calendar.html">Ledigt/Pris
-</a>
-<a href="/da/orderfood.html">Servicer
-</a>
-<a href="/da/booking_contact.html">Booking/Kontakt
-</a>
-<a href="/da/reviews.html">Kundeudtalelser
-</a>
-<a href="/da/address.html">Adresse
-</a>
-<select id="langSelect" class="navRight">
+<div id="e-navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li><a href="/da/index.html">Forside
+</a></li>
+<li><a href="/da/house.html">Huset og Haven
+</a></li>
+<li><a href="/da/surroundings.html">Badning/Fiskeri/Marina
+</a></li>
+<li><a href="/da/calendar.html">Ledigt/Pris
+</a></li>
+<li><a href="/da/orderfood.html">Servicer
+</a></li>
+<li><a href="/da/booking_contact.html">Booking/Kontakt
+</a></li>
+<li><a href="/da/reviews.html">Kundeudtalelser
+</a></li>
+<li><a href="/da/address.html">Adresse
+</a></li>
+</ul>
+<form class="navbar-form navbar-left">
+<select id="langSelect" class="form-control">
+
+<option value="da">Dansk</option>
 
 <option value="de">Deutsch</option>
 
 <option value="en">English</option>
 
-<option value="da">Dansk</option>
-
 </select>
+</form>
 </div>
+</div>
+</nav>
 
 <div class="front_pic">
-<img src="/static/pictures/front/home3.jpg?v=1" title="Erlang Holiday Cottage" alt="Erlang Holiday Cottage" />
+<img src="/static/pictures/front/home3.jpg?v=1" title="Erlang Holiday Cottage" alt="Erlang Holiday Cottage" class="img-responsive" />
 </div>
 <!-- Marketing messaging and featurettes
 ================================================== -->
@@ -423,5 +438,6 @@ $("#btn-Garden").addClass("active btn-default");
 });
 });
 </script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

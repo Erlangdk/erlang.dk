@@ -10,15 +10,15 @@ Buchen Sie Ihren Urlaub oder kontaktieren Sie uns.
 
 ">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="/static/magnific-popup/dist/magnific-popup.css">
 <script src="/static/magnific-popup/dist/jquery.magnific-popup.js"></script>
 <script src="/static/jquery.cookie.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -43,52 +43,52 @@ $.cookie('lang', $(this).val(), { expires: 364, path: '/' });
 });
 var langs = [
 
+"da",
+
 "de",
 
 "en",
 
-"da",
-
 ];
 var lang_normalize = {
 
-"de": "de",
-
-"de-de": "de",
-
-"en-za": "en",
-
-"en": "en",
-
-"de-lu": "de",
-
-"en-tt": "en",
-
-"en-bz": "en",
-
-"en-gb": "en",
-
 "de-li": "de",
-
-"en-jm": "en",
-
-"de-at": "de",
-
-"en-us": "en",
-
-"en-au": "en",
-
-"de-ch": "de",
-
-"en-ph": "en",
-
-"en-ca": "en",
-
-"en-nz": "en",
 
 "en-ie": "en",
 
+"en-au": "en",
+
+"en-bz": "en",
+
+"de-lu": "de",
+
+"en-za": "en",
+
 "da": "da",
+
+"en-us": "en",
+
+"en-jm": "en",
+
+"en-ca": "en",
+
+"en-ph": "en",
+
+"en-gb": "en",
+
+"en-tt": "en",
+
+"de": "de",
+
+"de-ch": "de",
+
+"en-nz": "en",
+
+"de-de": "de",
+
+"en": "en",
+
+"de-at": "de",
 
 };
 function langNorm(lang) {
@@ -142,37 +142,52 @@ return item.el.attr('title') + '<small>By Erlang</small>';
 });
 });
 </script>
-<div class="wrapper">
-<div class="page_content">
-<div class="logoText">Erlang Ferienhaus
+<div>
+<div class="container">
+<div class="logoText"><a href="/de/index.html">Erlang Ferienhaus
+</a></div>
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#e-navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span style="color:white;">Menü
+</span>
+</button>
 </div>
-<div class="customNav">
-<a href="/de/index.html">Home
-</a>
-<a href="/de/house.html">Haus und Garten
-</a>
-<a href="/de/surroundings.html">Baden/Fisherei/Marina
-</a>
-<a href="/de/calendar.html">Verfügb./Preise
-</a>
-<a href="/de/orderfood.html">Service
-</a>
-<a href="/de/booking_contact.html">Buchung/Kontakt
-</a>
-<a href="/de/reviews.html">Empfehlungen
-</a>
-<a href="/de/address.html">Adresse
-</a>
-<select id="langSelect" class="navRight">
+<div id="e-navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li><a href="/de/index.html">Home
+</a></li>
+<li><a href="/de/house.html">Haus / Garten
+</a></li>
+<li><a href="/de/surroundings.html">Baden/Fisherei/Marina
+</a></li>
+<li><a href="/de/calendar.html">Verfügb./Preise
+</a></li>
+<li><a href="/de/orderfood.html">Service
+</a></li>
+<li><a href="/de/booking_contact.html">Buchung/Kontakt
+</a></li>
+<li><a href="/de/reviews.html">Empfehlungen
+</a></li>
+<li><a href="/de/address.html">Adresse
+</a></li>
+</ul>
+<form class="navbar-form navbar-left">
+<select id="langSelect" class="form-control">
+
+<option value="da">Dansk</option>
 
 <option value="de">Deutsch</option>
 
 <option value="en">English</option>
 
-<option value="da">Dansk</option>
-
 </select>
+</form>
 </div>
+</div>
+</nav>
 
 <h1>Buchung und Kontakt
 </h1>
@@ -252,5 +267,6 @@ $("#btn-Garden").addClass("active btn-default");
 });
 });
 </script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
