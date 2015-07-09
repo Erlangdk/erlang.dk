@@ -43,52 +43,52 @@ $.cookie('lang', $(this).val(), { expires: 364, path: '/' });
 });
 var langs = [
 
+"en",
+
 "da",
 
 "de",
 
-"en",
-
 ];
 var lang_normalize = {
 
-"de-li": "de",
+"da": "da",
 
-"en-ie": "en",
-
-"en-au": "en",
+"de-at": "de",
 
 "en-bz": "en",
 
-"de-lu": "de",
-
-"en-za": "en",
-
-"da": "da",
-
-"en-us": "en",
-
-"en-jm": "en",
+"de-li": "de",
 
 "en-ca": "en",
 
-"en-ph": "en",
-
-"en-gb": "en",
-
-"en-tt": "en",
-
 "de": "de",
 
-"de-ch": "de",
+"en-za": "en",
 
-"en-nz": "en",
+"en-ph": "en",
+
+"en-ie": "en",
+
+"en-us": "en",
+
+"en-au": "en",
 
 "de-de": "de",
 
+"en-nz": "en",
+
 "en": "en",
 
-"de-at": "de",
+"en-tt": "en",
+
+"de-lu": "de",
+
+"en-gb": "en",
+
+"de-ch": "de",
+
+"en-jm": "en",
 
 };
 function langNorm(lang) {
@@ -177,11 +177,11 @@ return item.el.attr('title') + '<small>By Erlang</small>';
 <form class="navbar-form navbar-left">
 <select id="langSelect" class="form-control">
 
+<option value="en">English</option>
+
 <option value="da">Dansk</option>
 
 <option value="de">Deutsch</option>
-
-<option value="en">English</option>
 
 </select>
 </form>
