@@ -18,7 +18,7 @@ Erlang Sommerhus er placeret på Mols. Adressen er Lådenbjerg 12, 8420 Knebel, 
 <link rel="stylesheet" href="/static/magnific-popup/dist/magnific-popup.css">
 <script src="/static/magnific-popup/dist/jquery.magnific-popup.js"></script>
 <script src="/static/jquery.cookie.js"></script>
-<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/style.css?v=1" />
 <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -43,52 +43,52 @@ $.cookie('lang', $(this).val(), { expires: 364, path: '/' });
 });
 var langs = [
 
-"en",
-
 "de",
+
+"en",
 
 "da",
 
 ];
 var lang_normalize = {
 
-"en-ie": "en",
-
-"en": "en",
-
-"en-ph": "en",
-
-"de-li": "de",
-
-"en-us": "en",
-
-"de-ch": "de",
+"en-gb": "en",
 
 "en-au": "en",
 
-"en-jm": "en",
-
-"en-tt": "en",
-
-"de-de": "de",
-
-"en-bz": "en",
-
-"de-lu": "de",
-
-"da": "da",
-
-"en-nz": "en",
+"en-us": "en",
 
 "de-at": "de",
 
-"en-gb": "en",
+"en-tt": "en",
 
-"en-ca": "en",
+"en-jm": "en",
 
 "en-za": "en",
 
+"en-nz": "en",
+
+"en-ph": "en",
+
+"en-ie": "en",
+
+"de-ch": "de",
+
+"da": "da",
+
 "de": "de",
+
+"de-li": "de",
+
+"de-lu": "de",
+
+"en-ca": "en",
+
+"de-de": "de",
+
+"en": "en",
+
+"en-bz": "en",
 
 };
 function langNorm(lang) {
@@ -177,9 +177,9 @@ return item.el.attr('title') + '<small>By Erlang</small>';
 <form class="navbar-form navbar-left">
 <select id="langSelect" class="form-control">
 
-<option value="en">English</option>
-
 <option value="de">Deutsch</option>
+
+<option value="en">English</option>
 
 <option value="da">Dansk</option>
 
