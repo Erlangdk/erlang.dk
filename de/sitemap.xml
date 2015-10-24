@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
 	    <url>
-	        <loc>http://erlang.dk/de/</loc>
+	        <loc>http://erlang.dk/da/</loc>
 	        <changefreq>weekly</changefreq>
 	    </url>
     
@@ -12,7 +12,7 @@
 	    </url>
     
 	    <url>
-	        <loc>http://erlang.dk/da/</loc>
+	        <loc>http://erlang.dk/de/</loc>
 	        <changefreq>weekly</changefreq>
 	    </url>
     
