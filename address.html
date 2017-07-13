@@ -43,52 +43,52 @@ $.cookie('lang', $(this).val(), { expires: 364, path: '/' });
 });
 var langs = [
 
+"da",
+
 "en",
 
 "de",
 
-"da",
-
 ];
 var lang_normalize = {
 
+"en-ca": "en",
+
+"en-jm": "en",
+
+"de-at": "de",
+
 "de-li": "de",
 
-"en-bz": "en",
-
-"de": "de",
-
-"en-nz": "en",
-
-"en-gb": "en",
-
-"de-de": "de",
-
-"en-ph": "en",
+"en": "en",
 
 "en-za": "en",
 
-"de-lu": "de",
+"de-de": "de",
 
-"en-tt": "en",
+"en-bz": "en",
+
+"en-gb": "en",
+
+"de-lu": "de",
 
 "de-ch": "de",
 
 "en-us": "en",
 
-"en-jm": "en",
-
 "da": "da",
 
-"de-at": "de",
+"en-nz": "en",
+
+"en-ie": "en",
 
 "en-au": "en",
 
-"en-ca": "en",
+"en-ph": "en",
 
-"en": "en",
+"en-tt": "en",
 
-"en-ie": "en",
+"de": "de",
 
 };
 function langNorm(lang) {
@@ -169,7 +169,7 @@ return item.el.attr('title') + '<small>By Erlang</small>';
 </a></li>
 <li><a href="/da/booking_contact.html">Booking/Kontakt
 </a></li>
-<li><a href="/da/reviews.html">Lejerudtalelser
+<li><a href="/da/reviews.html">Lejere siger
 </a></li>
 <li><a href="/da/address.html">Adresse
 </a></li>
@@ -177,11 +177,11 @@ return item.el.attr('title') + '<small>By Erlang</small>';
 <form class="navbar-form navbar-left">
 <select id="langSelect" class="form-control">
 
+<option value="da">Dansk</option>
+
 <option value="en">English</option>
 
 <option value="de">Deutsch</option>
-
-<option value="da">Dansk</option>
 
 </select>
 </form>
